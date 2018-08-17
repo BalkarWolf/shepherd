@@ -1,11 +1,11 @@
 {
-  "name": "shepherd.js",
-  "version": "2.0.0-beta.17",
+  "name": "@christus/shepherd",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shipshapecode/shepherd.git"
+    "url": "git+https://github.com/BalkarWolf/shepherd.git"
   },
-  "description": "Guide your users through a tour of your app.",
+  "description": "Guide your users through a tour of your app. Test internal package.",
   "authors": [
     "Adam Schwartz <adam.flynn.schwartz@gmail.com>",
     "Zack Bloom <zackbloom@gmail.com>"
@@ -33,7 +33,8 @@
     "test:unit:ci": "karma start --single-run --browsers ChromeHeadlessNoSandbox",
     "test:unit:watch": "karma start --browsers Chrome",
     "test": "mocha",
-    "watch": "yarn clean && webpack --watch --mode development"
+    "watch": "yarn clean && webpack --watch --mode development",
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
   },
   "homepage": "http://shipshapecode.github.io/shepherd/docs/welcome/",
   "license": "MIT",
